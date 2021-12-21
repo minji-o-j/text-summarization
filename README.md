@@ -10,22 +10,27 @@
 
 ---
 ## 📚 Data 
-
+- 데이터 자세한 설명은 공개 불가
+- test data 및 baseline code: [here](https://github.com/aifactory-team/AFCompetition/tree/main/1923)
 ---
 ## 🔍 Solution
 ### Extractive
-- **Pororo** : 46.89 ~ 46.96
+- **Pororo** : 45.15 ~ 46.96
+  - 유니코드 제거
+  - 괄호 안 항목 제거 : 45.15
   
 ### Abstractive
 - **KoBart** : 36.40
 - **KoGPT2** : 39.28
-- **mt5** :
+- **mt5** : 30.74
 - **Pororo**
   - Split 2: 30.81
   - Split 3: 29.95
 
 ### Ensemble
-- ElasticSearch
+- ElasticSearch : 36.72
+  - 원본과 가장 유사도가 높은 요약문 선택
+  
 ---
 ## 🌟 순위
 - 5등
@@ -33,3 +38,6 @@
 
 ---
 ## 🔥 느낀점
+- **김다영**:
+- **정민지**: 결국 Pororo-extractive를 생성모델이 이길 수 없던게 아쉬웠다. 생성모델 결과를 보니 반복, 그리고 깨지는 문장들이 꽤 있었는데 이러한 점 때문에 추출 기반 성능을 이기지 못했던 것 같다. 다음에는 KoBert를 이용한 추출을 시도해보고 싶고, 요약 task가 어렵다는 것을 깨달았다.
+- **최석민**: 
