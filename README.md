@@ -13,7 +13,19 @@
 
 ---
 ## 🔍 Solution
+### Extractive
+- **Pororo** : 46.89 ~ 46.96
   
+### Abstractive
+- **KoBart** : 36.40
+- **KoGPT2** : 39.28
+- **mt5** :
+- **Pororo**
+  - Split 2: 30.81
+  - Split 3: 29.95
+
+### Ensemble
+- ElasticSearch
 ---
 ## 🌟 순위
 - 5등
